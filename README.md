@@ -1,6 +1,6 @@
 # Singapore Live Air & Weather
 
-A live, interactive map of Singapore's haze and weather built on the [data.gov.sg real-time APIs](https://guide.data.gov.sg/developer-guide/real-time-apis), plus the course notes and lessons used to build it.
+A live, interactive map of Singapore's haze and weather built on the [data.gov.sg real-time APIs](https://guide.data.gov.sg/developer-guide/real-time-apis), plus the course notes used to build it.
 
 ## Live map (`apps/live-map/`)
 
@@ -17,8 +17,6 @@ It's a single static HTML file (Leaflet + OneMap tiles) that calls the public AP
 
 | Path | What |
 |---|---|
-| `lessons/` | Interactive lessons (live coding lab + retrieval quiz) |
-| `reference/` | Printable API cheat sheet |
 | `assets/` | Shared stylesheet, quiz and lab components |
 | `MISSION.md`, `RESOURCES.md`, `NOTES.md`, `learning-records/` | Learning workspace state |
 
