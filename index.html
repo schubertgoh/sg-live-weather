@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SG Live Air &amp; Weather</title>
+<meta name="description" content="A live map of Singapore's haze, rain and weather built on data.gov.sg real-time APIs, plus the lessons behind it.">
+<link rel="stylesheet" href="assets/course.css">
+<style>
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; margin: 2rem 0; max-width: calc(var(--measure) + 10rem); }
+  .tile { display: block; border: 1px solid var(--rule); border-radius: 8px; padding: 1.1rem 1.2rem; text-decoration: none; color: var(--fg); background: var(--panel); }
+  .tile:hover { border-color: var(--fg); }
+  .tile b { display: block; font-size: 1.1rem; margin-bottom: .3rem; }
+  .tile span { color: var(--muted); font-size: .85rem; line-height: 1.45; display: block; }
+  .tile.hero { grid-column: 1 / -1; border-width: 2px; border-color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <p class="kicker">Course project · data.gov.sg real-time APIs</p>
+  <h1>Singapore live air &amp; weather</h1>
+  <p class="subtitle">Haze, rain and forecasts for anywhere in Singapore, straight from NEA's live feeds.</p>
+
+  <div class="tiles">
+    <a class="tile hero" href="apps/live-map/">
+      <b>🗺️ Open the live map →</b>
+      <span>PSI / US AQI / PM2.5 by region, rain radar, a 12-hour replay slider, 2-hour forecasts, temperature, and a “Should I go out?” planner for your route and time.</span>
+    </a>
+    <a class="tile" href="lessons/0001-reading-a-live-feed.html">
+      <b>📘 Lesson 01: Reading a live feed</b>
+      <span>The response envelope, joining metadata to readings, and a live coding lab.</span>
+    </a>
+    <a class="tile" href="reference/realtime-api-cheatsheet.html">
+      <b>📄 API cheat sheet</b>
+      <span>Endpoints, rate limits, error codes and the four response shapes on one printable page.</span>
+    </a>
+  </div>
+
+  <p class="muted" style="font-size:.85rem">Data: <a href="https://data.gov.sg/datasets?formats=API">data.gov.sg</a> real-time APIs (NEA). Basemap &amp; search: <a href="https://www.onemap.gov.sg/">OneMap</a> (SLA). Runs entirely in your browser with no API key; calls are queued to respect the public rate limit. For guidance only: follow official <a href="https://www.haze.gov.sg/">NEA advisories</a>.</p>
+</main>
+</body>
+</html>
